@@ -32,7 +32,7 @@ h1{
     margin: auto;
     display: grid;
     grid-template-columns: 40% 30% 30%;
-    grid-template-rows: 25rem 25rem ;
+    grid-template-rows: repeat(2,auto) ;
 }
 
 .image{
@@ -79,13 +79,13 @@ h1{
     font-size: 2em;
 }
 strong{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.2em;
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-size: 1.1em;
 }
 
 #after{
     background-color: #3196E2;
-    font-family: 'Shadows Into Light', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
     color: white;
     box-shadow: 5px 5px 5px  #ff826c;
 }
@@ -186,7 +186,7 @@ h2{
     
     
 }
-.priority-styling{
+ol li{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -201,7 +201,7 @@ h2{
     color: white;
 }
 
-.deleteIcon{
+li button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,15 +209,10 @@ h2{
     background-color:#ff826c;
     outline: none;
     border: none;
-    
     padding: 0.5rem;
     color: white;
+    font-size: 1.5rem;
 }
-.fas-fa-trash-alt{
-    color: white;
-    cursor: pointer;
-}
-
 
 .appointmentTasks{
     width: 100%;
@@ -301,7 +296,7 @@ h2{
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4,25rem) ;
+    grid-template-rows: repeat(4,auto) ;
 }
     
 .image{
@@ -346,7 +341,7 @@ h2{
         margin: auto;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(4,40rem) ;
+        grid-template-rows: repeat(4,auto) ;
     }
 
     .image{
