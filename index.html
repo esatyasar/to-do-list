@@ -13,17 +13,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <h1>
-        TO DO LIST
+        <span id="to"> TO </span><span id="do"> DO </span><span id="list"> LIST</span>
     </h1>
     <div class="container">
         <div class="image">
-            <p>Today's Plan</p>
+            <p><b>Today's Plan</b></p>
             <img id="img" src="./assets/sunandlaptop.jpg" alt="images">
-            <p><img id="icon" src="./assets/highlighter.png" alt="icon"> <strong>The best view comes <span>after
+            <p><img id="icon" src="./assets/highlighter.png" alt="icon"> <strong>The best view comes <span id="after">after
                         the</span> hardest climb</strong></p>
         </div>
         <div class="priority">
@@ -32,8 +35,9 @@
                 <input id="priority" type="text" placeholder="to be done..."><button id="priority-btn-add"> add
                 </button>
             </div>
-            <div class="priorityTasks">
-            </div>
+            <ol class="priorityTasks">
+
+            </ol>
         </div>
         <div class="appointment">
             <h2>APPOINTMENT</h2>
