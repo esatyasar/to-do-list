@@ -344,12 +344,20 @@ ol li.checked {
     margin: 5% auto 0 auto;
     }
 }
+.reminder-styling{
+    padding-left: 12%;
+
+}
+.appointment-styling{
+    padding-left: 12%;
+}
+
 
 
 @media screen and (max-width:650px) {
 
     body{
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .container{
@@ -378,13 +386,25 @@ ol li.checked {
         grid-column: 1/2;
         grid-row: 4/5;
         margin-bottom: 2rem;
+        margin-top: -1rem;
     }
 
     .image p{
         font-size: 2em;
-        
         }
 
+    .reminder-styling{
+        padding-left: 12%;
+        
+    }
+    .appointment-styling{
+        padding-left: 12%;
+    }
 
-
-}
+    .checked::before {
+        height: 12px;
+        width: 6px;
+      }
+      ol li{
+    padding-left: 12%;
+      }
