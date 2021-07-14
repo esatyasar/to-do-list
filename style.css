@@ -109,7 +109,7 @@ h2{
 #priority{
     width: 70%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     padding-left: 5%;
     border: 1px solid #ff826c;
@@ -137,7 +137,7 @@ h2{
 #appointment{
     width: 70%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     padding-left: 5%;
 }
@@ -159,7 +159,7 @@ h2{
 #reminder{
     width: 70%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     padding-left: 5%;
     
@@ -184,7 +184,6 @@ h2{
     flex-direction: column;
     margin-top: 5%;
     
-    
 }
 ol li{
     display: flex;
@@ -192,15 +191,15 @@ ol li{
     align-items: center;
     width: 80%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
-    padding-left: 5%;
+    padding-left: 8%;
     margin-top: 5%;
     list-style: none;
     background-color: #ff826c;
     color: white;
+    position: relative;
 }
-
 li button{
     display: flex;
     justify-content: center;
@@ -213,7 +212,24 @@ li button{
     color: white;
     font-size: 1.5rem;
 }
+ol li.checked {
+    color: #fff;
+    text-decoration: line-through;
 
+ }
+.checked::before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 9px;
+  }
+ 
 .appointmentTasks{
     width: 100%;
     margin: auto;
@@ -231,9 +247,9 @@ li button{
     align-items: center;
     width: 80%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
-    padding-left: 5%;
+    padding-left: 8%;
     margin-top: 5%;
     list-style: none;
     background-color: #FFC05F;
@@ -267,9 +283,9 @@ li button{
     align-items: center;
     width: 80%;
     height: 3rem;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
-    padding-left: 5%;
+    padding-left: 8%;
     margin-top: 5%;
     list-style: none;
     background-color:#3196E2 ;

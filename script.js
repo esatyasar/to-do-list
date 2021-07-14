@@ -23,8 +23,16 @@ const priorityAddTask = (e) => {
         const parent = this.parentNode;
         parent.remove();
     })
+    
 }
 prioritybtnAdd.addEventListener("click", priorityAddTask);
+
+var list = document.querySelector('ol');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 ///////////////////////appointment///////////////////////////////
 let appointmentbtnAdd = document.getElementById("appointment-btn-add");
@@ -52,6 +60,13 @@ const appointmentAddTask = (e) => {
 }
 appointmentbtnAdd.addEventListener("click", appointmentAddTask);
 
+var list = document.querySelector('.appointmentTasks');
+    list.addEventListener('click', function(ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    }, false);
+
 
 
 ///////////////reminder/////////////
@@ -77,5 +92,13 @@ const reminderAddTask = (e) => {
         const parent = this.parentNode;
         parent.remove();
     })
+   
 }
 reminderbtnAdd.addEventListener("click", reminderAddTask);
+
+var list = document.querySelector('.reminderTasks');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
